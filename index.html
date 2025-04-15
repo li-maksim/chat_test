@@ -3,45 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <a href="#">
-                <img src="img/logo.png" alt="logo" class="logo_img">
-                <h1 class="logo_text">Chat</h1>
-            </a>
-            <div class="btns">
-                <button class="btn">Сообщения</button>
-                <button class="btn">Друзья</button>
-                <button class="btn">Новости</button>
-            </div>
+        <a href="#" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g fill="#000"><path d="M7.25 8A.75.75 0 0 1 8 7.25h4a.75.75 0 0 1 0 1.5H8A.75.75 0 0 1 7.25 8zM7.25 12a.75.75 0 0 1 .75-.75h8a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1-.75-.75z" fill="currentColor" opacity="1" data-original="#000000" class=""></path><path fill-rule="evenodd" d="M9.966 1.25h4.068c1.371 0 2.447 0 3.311.07.88.073 1.607.221 2.265.557a5.75 5.75 0 0 1 2.513 2.513c.336.658.484 1.385.556 2.265.071.864.071 1.94.071 3.311v1.365c0 1.549 0 2.493-.232 3.287a5.75 5.75 0 0 1-3.9 3.9c-.794.232-1.738.232-3.287.232h-.756a4.25 4.25 0 0 0-2.42.776l-.05.035-2.61 1.865C7.99 22.5 6.012 20.948 6.7 19.232a.351.351 0 0 0-.327-.482h-.601a4.522 4.522 0 0 1-4.522-4.522V9.966c0-1.371 0-2.447.07-3.311.073-.88.221-1.607.557-2.265A5.75 5.75 0 0 1 4.39 1.877c.658-.336 1.385-.484 2.265-.556.864-.071 1.94-.071 3.311-.071zM6.777 2.816c-.787.064-1.295.188-1.706.397a4.25 4.25 0 0 0-1.858 1.858c-.21.411-.333.919-.397 1.706-.065.796-.066 1.81-.066 3.223v4.228a3.022 3.022 0 0 0 3.022 3.022h.601a1.851 1.851 0 0 1 1.72 2.539c-.131.326.244.62.53.416L11.29 18.3a5.75 5.75 0 0 1 3.276-1.05H15.184c1.742 0 2.452-.008 3.012-.172a4.25 4.25 0 0 0 2.882-2.882c.164-.56.172-1.27.172-3.012V10c0-1.413 0-2.427-.066-3.223-.064-.787-.188-1.295-.397-1.706a4.25 4.25 0 0 0-1.857-1.858c-.412-.21-.92-.333-1.707-.397-.796-.065-1.81-.066-3.223-.066h-4c-1.413 0-2.427 0-3.223.066z" clip-rule="evenodd" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g></g></svg>
+            <h1 class="logo_text">Chat</h1>
+        </a>
+        <div class="btns">
+            <button class="btn header_btn">Сообщения</button>
+            <button class="btn header_btn">Друзья</button>
+            <button class="btn header_btn">Новости</button>
         </div>
     </header>
     <main class="main">
         <div class="chats">
-            <div class="chat selected">
-                <img src="img/1.jpg" alt="user avatar" class="chat_img">
-                <div class="chat_text">
-                    <h2>Маша</h2>
-                    <p></p>
-                </div>
-            </div>
-            <div class="chat">
-                <img src="img/2.jpg" alt="user avatar" class="chat_img">
-                <div class="chat_text">
-                    <h2>Таня</h2>
-                    <p>Ок</p>
-                </div>
-            </div>
-            <div class="chat">
-                <img src="img/3.jpg" alt="user avatar" class="chat_img">
-                <div class="chat_text">
-                    <h2>Саша</h2>
-                    <p>Как знаешь</p>
-                </div>
-            </div>
             <div class="chat unread">
                 <img src="img/4.jpg" alt="user avatar" class="chat_img">
                 <div class="chat_text">
@@ -49,29 +27,57 @@
                     <p>Ну и что ты ей ответил?</p>
                 </div>
             </div>
-            <div class="chat unread">
+            <hr class="divider">
+            <div class="chat selected">
+                <img src="img/1.jpg" alt="user avatar" class="chat_img">
+                <div class="chat_text">
+                    <h2>Маша</h2>
+                    <p>Тогда увидимся завтра!   </p>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="chat">
+                <img src="img/2.jpg" alt="user avatar" class="chat_img">
+                <div class="chat_text">
+                    <h2>Таня</h2>
+                    <p>Ок</p>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="chat">
+                <img src="img/3.jpg" alt="user avatar" class="chat_img">
+                <div class="chat_text">
+                    <h2>Саша</h2>
+                    <p>Как знаешь</p>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="chat">
                 <img src="img/5.jpg" alt="user avatar" class="chat_img">
                 <div class="chat_text">
                     <h2>Даша</h2>
                     <p>Как дела?</p>
                 </div>
             </div>
-            <div class="chat unread">
+            <hr class="divider">
+            <div class="chat">
                 <img src="img/6.jpg" alt="user avatar" class="chat_img">
                 <div class="chat_text">
                     <h2>Женя</h2>
                     <p>Привет! Давно не виделись, как насчет встретиться?</p>
                 </div>
             </div>
+            <hr class="divider">
             <div class="chat">
-                <img src="img/7.jpg" alt="user avatar" class="chat_img">
+                <img src="img/7.png" alt="user avatar" class="chat_img">
                 <div class="chat_text">
                     <h2>Мошенники</h2>
-                    <p>Х0xtim Л3Гк0 заРаб0ТАТb? Пер3Ходи п0 мо3й ссылкЕ</p>
+                    <p>Х0чеШb Л3Гк0 заРаб0ТАТb? Пер3Ходи п0 мо3й ссылкЕ</p>
                 </div>
             </div>
+            <hr class="divider">
             <div class="chat">
-                <img src="img/7.jpg" alt="user avatar" class="chat_img">
+                <img src="img/7.png" alt="user avatar" class="chat_img">
                 <div class="chat_text unread">
                     <h2>Спам</h2>
                     <p>Специальное предложение!!!</p>
@@ -79,17 +85,28 @@
             </div>
         </div>
         <div class="messages">
-            
+            <div class="messages_bubble from_user">Привет! Как твой день? Уже закончил все дела?</div>
+            <div class="messages_bubble">Привет! Да, только что закрыл последний проект. Теперь можно немного отдохнуть. А у тебя как?</div>
+            <div class="messages_bubble from_user">Ну, я всё ещё в процессе. Задумался о том, куда бы сходить вечером. Может, кино?</div>
+            <div class="messages_bubble">
+                <img class="messages_img" src="img/emoji.jpg" alt="">
+            </div>
+            <div class="messages_bubble">Кино сегодня не вариант – новые релизы не впечатляют. </div>
+            <div class="messages_bubble">Может, лучше в пиццерию?</div>
+            <div class="messages_bubble from_user">Давай</div>
+            <div class="messages_bubble">Тогда увидимся завтра!</div>
         </div>
     </main>
-    <footer>
-        <textarea name="user_message" id="user_message"></textarea>
-        <button class="btn_attach">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" x="0" y="0" viewBox="0 0 100 100" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill-rule="evenodd" d="M53.976 8.925c8.567-8.567 22.456-8.567 31.023 0 8.566 8.567 8.566 22.456 0 31.023L48.54 76.406c-5.21 5.21-13.66 5.21-18.87 0-5.211-5.211-5.211-13.66 0-18.87l37.977-37.977a4.75 4.75 0 1 1 6.717 6.717L36.388 64.253a3.843 3.843 0 1 0 5.435 5.435L78.281 33.23c4.857-4.857 4.857-12.73 0-17.587-4.857-4.857-12.73-4.857-17.588 0L24.236 52.1c-8.213 8.213-8.213 21.528 0 29.74 8.212 8.213 21.528 8.213 29.74 0l27.343-27.343a4.75 4.75 0 0 1 6.718 6.718L60.693 88.558c-11.922 11.923-31.252 11.923-43.175 0-11.922-11.922-11.922-31.252 0-43.175z" clip-rule="evenodd" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
-        </button>
-        <button class="btn_send">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill="#000000" d="M22.101 10.562 2.753 1.123A1.219 1.219 0 0 0 1 2.22v.035a2 2 0 0 0 .06.485l1.856 7.424a.5.5 0 0 0 .43.375l8.157.907a.559.559 0 0 1 0 1.11l-8.157.907a.5.5 0 0 0-.43.375L1.06 21.261a2 2 0 0 0-.06.485v.035a1.219 1.219 0 0 0 1.753 1.096L22.1 13.438a1.6 1.6 0 0 0 0-2.876z" opacity="1" data-original="#000000" class=""></path></g></svg>
-        </button>
+    <footer class="footer">
+        <div class="footer_wrapper">
+            <textarea class="textarea" name="user_message" id="user_message" cols="180" rows="4"></textarea>
+            <button class="btn attach_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" x="0" y="0" viewBox="0 0 100 100" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill-rule="evenodd" d="M53.976 8.925c8.567-8.567 22.456-8.567 31.023 0 8.566 8.567 8.566 22.456 0 31.023L48.54 76.406c-5.21 5.21-13.66 5.21-18.87 0-5.211-5.211-5.211-13.66 0-18.87l37.977-37.977a4.75 4.75 0 1 1 6.717 6.717L36.388 64.253a3.843 3.843 0 1 0 5.435 5.435L78.281 33.23c4.857-4.857 4.857-12.73 0-17.587-4.857-4.857-12.73-4.857-17.588 0L24.236 52.1c-8.213 8.213-8.213 21.528 0 29.74 8.212 8.213 21.528 8.213 29.74 0l27.343-27.343a4.75 4.75 0 0 1 6.718 6.718L60.693 88.558c-11.922 11.923-31.252 11.923-43.175 0-11.922-11.922-11.922-31.252 0-43.175z" clip-rule="evenodd" fill="currentColor" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </button>
+            <button class="btn send_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill="currentColor" d="M22.101 10.562 2.753 1.123A1.219 1.219 0 0 0 1 2.22v.035a2 2 0 0 0 .06.485l1.856 7.424a.5.5 0 0 0 .43.375l8.157.907a.559.559 0 0 1 0 1.11l-8.157.907a.5.5 0 0 0-.43.375L1.06 21.261a2 2 0 0 0-.06.485v.035a1.219 1.219 0 0 0 1.753 1.096L22.1 13.438a1.6 1.6 0 0 0 0-2.876z" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </button>
+        </div>
     </footer>
 </body>
 </html>

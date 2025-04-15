@@ -1,0 +1,31 @@
+.header {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 50px;
+    padding: 0 60px;
+    display: flex;
+    gap: 45px;
+    border-bottom: solid 0.5px var(--base-color);
+}
+
+.header .logo {
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--base-color);
+}
+
+.header .logo svg {
+    margin-top: 4px;
+}
+
+.header .logo h1 {
+    color: var(--base-color);
+}
+
+.header .btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
